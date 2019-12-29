@@ -1,0 +1,26 @@
+.el-date-editor {
+    .el-input__inner {
+        height: 59px;
+        border: 1px solid #d2d7e0;
+        border-radius: 4px;
+        background-color: #fafbfc;
+        &::-webkit-input-placeholder {
+            color: #878e9b;
+        }
+        &::-moz-placeholder {
+            color: #878e9b;
+        }
+        &:-ms-input-placeholder {
+            color: #878e9b;
+        }
+        &:-moz-placeholder {
+            color: #878e9b;
+        }
+    }
+    &.date-control  {
+        width: 100%;
+        .el-input__icon {
+            display: none;
+        }
+    }
+}
