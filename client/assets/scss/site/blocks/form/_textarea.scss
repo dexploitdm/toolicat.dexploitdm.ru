@@ -1,0 +1,13 @@
+.el-textarea {
+    &__inner {
+        font-family: 'Avenir Next Cyr Medium';
+        font-size: 14px;
+        line-height: 1.2;
+        color: rgb(115, 119, 126);
+        background-color: #fafbfc;
+        border: 1px solid rgb(210, 215, 224);
+        border-radius: 4px;
+        padding: 20px 20px 20px 28px;
+        resize: none;
+    }
+}

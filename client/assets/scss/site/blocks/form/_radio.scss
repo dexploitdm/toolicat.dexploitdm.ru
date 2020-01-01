@@ -1,0 +1,7 @@
+.el-radio {
+    &.check {
+        .el-radio__inner {
+            border-radius: 0;
+        }
+    }
+}

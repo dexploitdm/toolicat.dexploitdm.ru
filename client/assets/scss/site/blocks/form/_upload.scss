@@ -1,0 +1,47 @@
+.t-upload {
+    &-box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &-icon {
+        position: relative;
+        width: 20px;
+        height: 18px;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Crect width='20' height='18' fill='url(%23pattern0)'/%3E%3Cdefs%3E%3Cpattern id='pattern0' patternContentUnits='objectBoundingBox' width='1' height='1'%3E%3Cuse xlink:href='%23image0' transform='scale(0.05 0.0555556)'/%3E%3C/pattern%3E%3Cimage id='image0' width='20' height='18' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAA+0lEQVQ4ja3UvyuHQRwH8JevDMpAokSxmGWVUjYGsVjNJovhOxiNstrIIP+AjUGy2JTBjyzKIsooKXS6p65vvnqe87zr6uruXnd9rrtOeRnHFPrxhM9MxxCO8ZW0R8znYCO4xzVm0MAo9vCB6RzsCgMtYx04wlkdWJGlWMeuRgnsFG+YxXObee/xpH966ckmcIALbMTFafZxWRabjP0bbMULWEnmrsYbX6yCpfU7x3YL1szFCmChTqxZFRv7L9aD2wTojsXPwkLW8IrBX8YqYyE7OKkLC1nHC/raYOEjKI2F9OIBd9jEYQsQNporixUZxm78msLbXa4K/ATfKc1ct2XRZ/wAAAAASUVORK5CYII='/%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-size: cover;
+            width: 20px;
+            height: 18px;
+        }
+    }
+    &-label {
+        font-family: 'Avenir Next Cyr Demi';
+        font-size: 14px;
+        color: #adadad;
+        padding-left: 10px;
+    }
+    &-btn {
+        font-family: 'Montserrat Bold';
+        font-size: 14px;
+        color: #44b142;
+        padding-left: 18px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover {
+            color: $color-dark;
+        }
+        &.full {
+            flex-basis: 100%;
+            padding-top: 10px;
+            padding-left: 30px;
+        }
+    }
+    &.upload-box {
+        flex-basis: 46%;
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+}

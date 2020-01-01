@@ -1,0 +1,89 @@
+footer {
+    .footer {
+        &-layout {
+            background-color: $bg-footer;
+            &.t-footer {
+                margin-top: 65px;
+                transition: .3s;
+            }
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 56px;
+            padding-bottom: 52px;
+            transition: .3s;
+        }
+        &-logo {
+            font-family: 'Avenir Next Cyr Bold';
+            font-size: 32px;
+            line-height: normal;
+            color: $color-white;
+        }
+        &-menu {
+            display: flex;
+        }
+        &-link {
+            font-family: 'Avenir Next Cyr Demi';
+            font-size: 16px;
+            line-height: normal;
+            color: $color-white;
+            transition: .3s;
+            &:not(lst-child){
+                margin-right: 40px;
+            }
+            &:hover {
+                color: $color-blue;
+            }
+        }
+        &-soc {
+            .soc-link {
+                &:not(:last-child){
+                    margin-right: 30px;
+                }
+                i {
+                    font-size: 20px;
+                    color: $color-white;
+                }
+            }
+        }
+        &-bottom {
+            background-color: $color-dark;
+        }
+        &-corp {
+            font-family: 'Avenir Next Cyr Regular';
+            font-size: 14px;
+            line-height: normal;
+            color: $color-white;
+            padding: 22px 0;
+            text-align: center;
+        }
+        @media (max-width: $mobile) {
+            &-layout {
+                &.t-footer {
+                    margin-top: 40px;
+                }
+            }
+            &-box {
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            &-menu {
+                flex-basis: 100%;
+                justify-content: center;
+                padding: 35px 0;
+            }
+        }
+        @media (max-width: 340px) {
+            &-link {
+                font-size: 12px;
+                &:not(:last-child){
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.page {
+    background-color: $bg-light-gray;
+    .title-h2 {
+        font-size: 26px;
+    }
+}
+.page-box-layout {
+    padding: 50px 90px 60px 90px;
+    transition: .3s;
+    @media (max-width: $mobile) {
+        padding: 27px 30px 50px 30px;
+        .box-control {
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: $mobile-mini) {
+        padding: 27px 15px 50px 15px;
+    }
+}
+.catalogs {
+    .search {
+        padding-top: 60px;
+        .t-input {
+            border: 1px solid rgb(204, 207, 212);
+            height: 70px;
+        }
+        .t-button {
+            height: 70px;
+            outline: none;
+        }
+        &-box {
+            margin-bottom: 60px;
+        }
+    }
+}
