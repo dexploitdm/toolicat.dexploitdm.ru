@@ -1,0 +1,10 @@
+.t-icon {
+    position: relative;
+    &-check {
+        &:before {
+            content: '';
+            position: absolute;
+
+        }
+    }
+}
