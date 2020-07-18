@@ -18,9 +18,13 @@
         padding-top: 120px;
         transition: .3s;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .bold {
         font-family: 'Avenir Next Cyr Bold';
+        text-align: center;
     }
     &-soc {
         position: absolute;
@@ -54,10 +58,9 @@
     }
     &-content {
         font-family: 'Avenir Next Cyr Regular';
-        max-width: 83%;
         width: 100%;
         margin: 0 auto;
-        padding-bottom: 50px;
+        padding-bottom: 40px;
         text-align: left;
         transition: .3s;
     }
@@ -86,15 +89,51 @@
         font-size: 52px;
         line-height: normal;
         color: $color-white;
-        max-width: 750px;
         transition: .3s;
+        text-align: center;
         &.bold {
             font-family: 'Avenir Next Cyr Bold';
+            text-align: center;
+        }
+        p{
+            font: 30px $am;
+            padding-top: 100px;
+            color: #ffffff;
+            text-align: center;
+            text-transform: none;
+            @media  #{$__1024}{
+                padding-top: 40px;
+            }
         }
     }
     .search, .search-link {
-        max-width: 750px;
-        margin-left: 116px;
+        margin: 0 auto;
+    }
+    .search-link {
+        background-color:transparent;
+        a{
+            background-color:transparent!important;
+            position: relative;
+            z-index: 1;
+            &:before{
+                position: absolute;
+                top: 0;
+                background-color: #33363c;
+                left: 0;
+                width: 80px;
+                border-radius: 4px;
+                content:'';
+                height: 100%;
+                z-index: -1;
+                transition: .3s;
+            }
+            &:hover{
+                background-color:transparent;
+                &:before{
+                    width: 100%;
+                }
+            }
+        }
     }
     &-scroll {
         padding-top: 100px;

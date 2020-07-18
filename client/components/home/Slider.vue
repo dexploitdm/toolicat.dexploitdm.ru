@@ -3,8 +3,8 @@
         <div class="slider-layout">
             <div class="slider-content">
                 <div class="slider-text">
-                    Находи, сравнивай и выбирай <span class="blue bold">лучшие сервисы</span>
-                    для упрощения работы и повышения продуктивности
+                   <span class="blue bold">Каталог сервисов и программ </span>
+                    <p>Находи, сравнивай и выбирай</p>
                 </div>
             </div>
 
